@@ -64,11 +64,12 @@
       > - `ng g c components/views/product-crud --module app`
 
     - Products
-      > - `ng g c components/product/product-create --module=app`
       > - `ng g i components/product/product` >> Criar a inteface que define o objeto Product
       > - `ng g s components/product/product` >> Criar o serviço
+      > - `ng g c components/product/product-create --module=app` >> Tela para adicionar um novo produto
       > - `ng g c components/product/product-read --module=app` >> Tabela com lista do produtos cadastrados
       > - `ng g @angular/material:table components/product/product-read-demo --module app` >> exemplo da criação de um componente utilizando o **schematics** do **@angular/material**
+      > - `ng g c components/product/product-update --module=app` >> Tela para atualizar um produto
 
   - Criação de directivas
     - `ng g d directives/red --module=app` > atributo

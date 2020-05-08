@@ -2,3 +2,18 @@ table
 {
   width:100%;
 }
+
+a
+{
+  &.edit
+  {
+    color: #d9cd26;
+    margin-right: .5rem;
+  }
+
+  &.delete
+  {
+    color:#e35e6b;
+  }
+
+}

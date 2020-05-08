@@ -16,7 +16,7 @@
       "price": 5000.89
     },
     {
-      "name": "Novo Produto",
+      "name": "Lapiseira",
       "price": "9.23",
       "id": 4
     },
@@ -27,7 +27,7 @@
     },
     {
       "name": "Notebook",
-      "price": "3677,99",
+      "price": "3677.99",
       "id": 6
     }
   ]

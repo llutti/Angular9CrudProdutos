@@ -35,12 +35,12 @@ export class ProductCreateComponent implements OnInit
         {
           this.productService
             .showMessage('Produto Criado com Sucesso!!!');
-          this.router.navigate(['/products']);
+          this.voltarListaProduto;
         }
       );
   }
 
-  cancel(): void
+  voltarListaProduto(): void
   {
     this.router.navigate(['/products']);
   }
