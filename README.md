@@ -67,7 +67,19 @@
       > - `ng g c components/product/product-create --module=app`
       > - `ng g i components/product/product` >> Criar a inteface que define o objeto Product
       > - `ng g s components/product/product` >> Criar o serviço
+      > - `ng g c components/product/product-read --module=app` >> Tabela com lista do produtos cadastrados
+      > - `ng g @angular/material:table components/product/product-read-demo --module app` >> exemplo da criação de um componente utilizando o **schematics** do **@angular/material**
 
   - Criação de directivas
     - `ng g d directives/red --module=app` > atributo
     - `ng g d directives/for --module=app` > estrutural
+
+## Observações
+  - Durante o curso não foi citado a necessidade realizar o **unsubscribe** quando é realizado um **subcribe**. Isto é muito comum na utilização das chamadas *http* para acessar o backend. Na minha versão do código do curso eu incluí em todas os  **subscribes** o seguinte código para resolver este problemas:
+
+    ``` typescript
+      ...
+      .pipe(take(1)) // Este comando indica que será executado apenas uma vez e depois deverá ser realizado o unsubscribe
+      .subscribe(...)
+      ...
+    ```

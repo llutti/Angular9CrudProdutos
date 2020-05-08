@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../product.service';
 import { Router } from '@angular/router';
 import { Product } from '../product';
+import { take } from 'rxjs/operators';
 
 @Component({
   selector: 'app-product-create',
@@ -28,6 +29,7 @@ export class ProductCreateComponent implements OnInit
   {
     this.productService
       .create(this.product)
+      .pipe(take(1))
       .subscribe(
         () =>
         {
