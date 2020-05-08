@@ -3,6 +3,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTable } from '@angular/material/table';
 import { ProductReadDemoDataSource, ProductReadDemoItem } from './product-read-demo-datasource';
+import { HeaderService } from '../../templates/header/header.service';
 
 @Component({
   selector: 'app-product-read-demo',
@@ -17,6 +18,15 @@ export class ProductReadDemoComponent implements AfterViewInit, OnInit {
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
   displayedColumns = ['id', 'name'];
+
+  constructor(private headerService: HeaderService)
+  {
+    headerService.headerData = {
+      title: 'Lista de Produtos (Demo)',
+      icon: 'store',
+      routeUrl: '/products/demo'
+    }
+  }
 
   ngOnInit() {
     this.dataSource = new ProductReadDemoDataSource();

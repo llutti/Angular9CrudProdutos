@@ -58,6 +58,8 @@
       > - `ng g c components/templates/nav --module app`
       > - `ng g c components/templates/header --module app`
       > - `ng g c components/templates/footer --module app`
+      > - `ng g i components/templates/header/header-data`
+      > - `ng g s components/templates/header/header`
 
     - Views
       > - `ng g c components/views/home --module app`
