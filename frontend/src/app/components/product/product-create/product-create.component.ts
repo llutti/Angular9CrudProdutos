@@ -35,7 +35,7 @@ export class ProductCreateComponent implements OnInit
         {
           this.productService
             .showMessage('Produto Criado com Sucesso!!!');
-          this.voltarListaProduto;
+          this.voltarListaProduto();
         }
       );
   }

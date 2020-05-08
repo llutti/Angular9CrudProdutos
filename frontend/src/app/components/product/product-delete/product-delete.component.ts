@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { Product } from '../product';
-import { ProductService } from '../product.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { take } from 'rxjs/operators';
+import { Product } from '../product';
+import { ProductService } from '../product.service';
 
 @Component({
-  selector: 'app-product-update',
-  templateUrl: './product-update.component.html',
-  styleUrls: ['./product-update.component.scss']
+  selector: 'app-product-delete',
+  templateUrl: './product-delete.component.html',
+  styleUrls: ['./product-delete.component.scss']
 })
-export class ProductUpdateComponent implements OnInit
+export class ProductDeleteComponent implements OnInit
 {
 
   public product: Product;
@@ -34,16 +34,16 @@ export class ProductUpdateComponent implements OnInit
       )
   }
 
-  updateProduct(): void
+  deleteProduct(): void
   {
     this.productService
-      .update(this.product)
+      .delete(this.product.id)
       .pipe(take(1))
       .subscribe(
         () =>
         {
           this.productService
-            .showMessage('Produto Alterado com Sucesso!!!');
+            .showMessage('Produto Apagado com Sucesso!!!');
           this.voltarListaProduto();
         }
       );

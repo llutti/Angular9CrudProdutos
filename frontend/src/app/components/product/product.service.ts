@@ -34,7 +34,7 @@ export class ProductService
     return this.http.get<Product[]>(this.baseUrl);
   }
 
-  public readById(id: string): Observable<Product>
+  public readById(id: number): Observable<Product>
   {
     const url = `${this.baseUrl}/${id}`;
 
@@ -45,6 +45,12 @@ export class ProductService
   {
     const url = `${this.baseUrl}/${product.id}`;
     return this.http.put<Product>(url, product);
+  }
+
+  public delete(id: number): Observable<Product>
+  {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.delete<Product>(url);
   }
 
 }

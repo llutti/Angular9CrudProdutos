@@ -70,6 +70,7 @@
       > - `ng g c components/product/product-read --module=app` >> Tabela com lista do produtos cadastrados
       > - `ng g @angular/material:table components/product/product-read-demo --module app` >> exemplo da criação de um componente utilizando o **schematics** do **@angular/material**
       > - `ng g c components/product/product-update --module=app` >> Tela para atualizar um produto
+      > - `ng g c components/product/product-delete --module=app` >> Tela para apagar um produto
 
   - Criação de directivas
     - `ng g d directives/red --module=app` > atributo
