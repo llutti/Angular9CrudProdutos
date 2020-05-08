@@ -14,6 +14,21 @@
       "id": 3,
       "name": "Sansung S20+",
       "price": 5000.89
+    },
+    {
+      "name": "Novo Produto",
+      "price": "9.23",
+      "id": 4
+    },
+    {
+      "name": "Geladeira",
+      "price": "1893.30",
+      "id": 5
+    },
+    {
+      "name": "Notebook",
+      "price": "3677,99",
+      "id": 6
     }
   ]
 }
