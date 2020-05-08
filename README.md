@@ -2,7 +2,7 @@
 
   Este projeto está sendo desenvolvido durante o treinamento fornecido pela [Cod3rs](https://www.cod3r.com.br/)
 
-  ![](/screenshots/frontend-2020-05-08 08_57_54.png)
+  ![Print da tela do aplicativo](https://github.com/llutti/Angular9CrudProdutos/blob/master/screenshots/frontend-2020-05-08%2008_57_54.png)
 
 ## Comandos utilizados para a criação do Backend
   - Criar uma pasta chamada `backend`
