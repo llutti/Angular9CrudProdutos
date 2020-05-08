@@ -62,3 +62,7 @@
     - Views
       > - `ng g c components/views/home --module app`
       > - `ng g c components/views/product-crud --module app`
+
+  - Criação de directivas
+    - `ng g d directives/red --module=app` > atributo
+    - `ng g d directives/for --module=app` > estrutural
