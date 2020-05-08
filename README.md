@@ -1,23 +1,25 @@
 # Projeto do Curso "Angular 9 - Essencial" ministrado pela Cod3rs
 
-  Este projeto está sendo desenvolvido durante o treinamento fornecido pela Cod3rs (https://www.cod3r.com.br/)
+  Este projeto está sendo desenvolvido durante o treinamento fornecido pela [Cod3rs](https://www.cod3r.com.br/)
+
+  ![](/screenshots/frontend-2020-05-08 08_57_54.png)
 
 ## Comandos utilizados para a criação do Backend
   - Criar uma pasta chamada `backend`
   - `npm init -y`
   - `npm i json-server`
-  - Criar um arquivo `db.json` para servir com base de dados que será utilizado pelo "json-server"
+  - Criar um arquivo `db.json` para servir com base de dados que será utilizado pelo **json-server**
   - Configurar o arquivo `package.json` o seguinte script para inicialização:
     > `"start": "json-server --watch db.json --port 3001"`
   - Para iniciar a utilização do servidor de backend executar o comando:
     > `npm start`
-  - Adicionar o seguinte conteúdo como carga inicial no arquivo 'db.json'
+  - Adicionar o seguinte conteúdo como carga inicial no arquivo `db.json`
     ``` json
       {
         "products": [
           {
             "id": 1,
-            "name": "Canceta BiC Preta",
+            "name": "Canceta BIC Preta",
             "price": 5.89
           },
           {
