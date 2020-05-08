@@ -63,6 +63,11 @@
       > - `ng g c components/views/home --module app`
       > - `ng g c components/views/product-crud --module app`
 
+    - Products
+      > - `ng g c components/product/product-create --module=app`
+      > - `ng g i components/product/product` >> Criar a inteface que define o objeto Product
+      > - `ng g s components/product/product` >> Criar o serviço
+
   - Criação de directivas
     - `ng g d directives/red --module=app` > atributo
     - `ng g d directives/for --module=app` > estrutural
